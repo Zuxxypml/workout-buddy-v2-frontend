@@ -8,7 +8,7 @@ const formInitialState = {
 };
 const Form = () => {
   const { dispatch } = useAuthContext();
-  const [isSignUp, setIsSignUp] = useState(true);
+  const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormdata] = useState(formInitialState);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
