@@ -9,7 +9,7 @@ function Indexpage() {
   const user = JSON.parse(localStorage.getItem("user"));
   const navigate = useNavigate();
   const userWorkouts = workouts?.filter(
-    (workout) => workout.owner === user.email
+    (workout) => workout.owner === user?.email
   );
 
   useEffect(() => {
