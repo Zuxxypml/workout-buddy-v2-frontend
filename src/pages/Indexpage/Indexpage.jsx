@@ -15,7 +15,7 @@ function Indexpage() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://workout-buddy-backend-kash.onrender.com"
+        "https://workout-buddy-backend-kash.onrender.com/api/workouts"
       );
       const { msg } = await response.json();
       if (response.ok) {
