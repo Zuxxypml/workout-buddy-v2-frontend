@@ -15,7 +15,7 @@ function Indexpage() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://workout-buddy-api-v2.herokuapp.com/api/workouts"
+        "https://workout-buddy-backend-kash.onrender.com"
       );
       const { msg } = await response.json();
       if (response.ok) {

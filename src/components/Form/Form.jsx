@@ -21,7 +21,7 @@ const Form = () => {
   };
   const formRequest = async (data, reqType) => {
     const response = await fetch(
-      `https://workout-buddy-api-v2.herokuapp.com/api/user/${reqType}`,
+      `https://workout-buddy-backend-kash.onrender.com/api/user/${reqType}`,
       {
         method: "POST",
         mode: "cors",

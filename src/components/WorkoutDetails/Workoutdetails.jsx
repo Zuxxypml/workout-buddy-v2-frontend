@@ -11,7 +11,7 @@ function Workoutdetails(props) {
   });
   async function handleDelete() {
     const rawResponse = await fetch(
-      `https://workout-buddy-api-v2.herokuapp.com/api/workouts/${_id}`,
+      `https://workout-buddy-backend-kash.onrender.com/api/workouts/${_id}`,
       {
         method: "DELETE",
         headers: {

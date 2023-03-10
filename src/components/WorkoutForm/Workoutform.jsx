@@ -18,7 +18,7 @@ const Workoutform = () => {
     const userEmail = JSON.parse(localStorage.getItem("user")).email;
 
     const response = await fetch(
-      "https://workout-buddy-api-v2.herokuapp.com/api/workouts",
+      "https://workout-buddy-backend-kash.onrender.com/api/workouts",
       {
         method: "POST",
         mode: "cors",
